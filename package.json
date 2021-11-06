@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
