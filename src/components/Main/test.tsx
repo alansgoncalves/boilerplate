@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 
 import Main from '../Main'
 
-describe('Testa o componenete Main', () => {
+describe('Testa o componente Main', () => {
   it('should render the heading', () => {
     const { container } = render(<Main />)
     expect(
