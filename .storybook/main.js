@@ -6,6 +6,7 @@ module.exports = {
   "addons": [
     "storybook/preset-typecript",
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
+    "@storybook/addon-knobs"
   ]
 }
