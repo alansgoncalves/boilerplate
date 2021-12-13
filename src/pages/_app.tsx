@@ -11,8 +11,8 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+          name="description"
+          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
       </Head>
       <GlobalStyles />
