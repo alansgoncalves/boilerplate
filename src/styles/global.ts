@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100%;
+    height: 102%;
   }
 
   body {
