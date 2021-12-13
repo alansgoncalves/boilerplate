@@ -14,12 +14,12 @@ export const Wrapper = styled.main`
 `
 
 export const Logo = styled.img`
-  width: 25rem;
+  width: 20rem;
   margin-bottom: 2rem;
 `
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 `
 
 export const Description = styled.h2`
