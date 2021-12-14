@@ -8,7 +8,9 @@
     "lint": "eslint src --max-warnings=0",
     "prepare": "husky install",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -24,14 +26,18 @@
   "dependencies": {
     "husky-init": "^7.0.0",
     "next": "12.0.3",
+    "next-pwa": "^5.4.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled": "^1.0.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@next/eslint-plugin-next": "^12.0.3",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
@@ -39,6 +45,7 @@
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
+    "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^1.13.3",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
@@ -48,6 +55,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
+    "jest-styled-components": "^7.0.6",
     "lint-staged": "^12.0.2",
     "prettier": "2.4.1",
     "typescript": "^4.4.4"
