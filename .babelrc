@@ -1,11 +1,29 @@
 {
+  "presets": ["next/babel", "@babel/preset-typescript"],
   "plugins": [
     [
       "babel-plugin-styled-components",
       {
-        "ssr": true
+        "ssr": true,
+        "displayName": true
       }
     ]
   ],
-  "presets": ["next/babel", "@babel/preset-typescript"]
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": false,
+            "displayName": false
+          }
+        ]
+      ]
+    }
+  }
 }
+
+// Isso vai nos garantir que quando estivermos rodando no ambiente de teste,
+// ele não será iniciado via ssr, e consequentemente o toHaveStyledRule vai conseguir
+// buscar de fato o que interessa.
