@@ -21,10 +21,13 @@
     "jsx": "preserve"
   },
   "include": [
+    ".jest/setup.ts",
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/styles/global.ts"  ],
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/styles/global.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
