@@ -1,13 +1,13 @@
 module.exports = function (plop) {
   plop.setGenerator('component', {
-    description: 'application component',
+    description: 'Cretae a component',
 
     // inquirer prompts
     prompts: [
       {
         type: 'input',
         name: 'name',
-        message: 'Controller name?'
+        message: 'What is your component name?'
       }
     ],
 

@@ -7,7 +7,7 @@ module.exports = {
     '!src/**/stories',
     '!src/types/**',
     '!src/styles/**',
-    '!src/stories/**',
+    '!src/**/stories.tsx',
     '!src/components/Main/stories.tsx'
   ], //Ignore stories files from test coverage
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'], //Setup files to run before each test
