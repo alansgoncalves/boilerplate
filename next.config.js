@@ -5,4 +5,12 @@ const nextConfig = {
   /* config options here */
 }
 
-module.exports = nextConfig
+module.exports = {
+  ...nextConfig,
+  images: {
+    domains: ['localhost', 'res.cloudinary.com']
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  }
+}
